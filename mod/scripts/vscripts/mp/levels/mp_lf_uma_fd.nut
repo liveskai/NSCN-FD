@@ -12,21 +12,23 @@ void function initFrontierDefenseData()
 	
 	int index = 1
 	
-	array<vector> infantryspawns = []
-	infantryspawns.append( < 1074, 2047, 4 > )
-	infantryspawns.append( < 1305, 2160, 6 > )
-	infantryspawns.append( < 1163, 1763, 136 > )
-	infantryspawns.append( < 1006, 1565, 136 > )
-	infantryspawns.append( < 593, 1718, 11 > )
-	infantryspawns.append( < 669, 2226, 15 > )
-	infantryspawns.append( < 262, 2090, 4 > )
-	infantryspawns.append( < 30, 2322, 4 > )
-	infantryspawns.append( < 2, 1830, 8 > )
-	infantryspawns.append( < 205, 1638, 4 > )
-	infantryspawns.append( < -245, 1318, 8 > )
-	infantryspawns.append( < -356, 1523, 20 > )
-	infantryspawns.append( < -13, 1850, 11 > )
-	infantryspawns.append( < 110, 1634, 4 > )
+	array<vector> infantryspawns =
+	[
+	    < 1074, 2047, 4 >,
+	    < 1305, 2160, 6 >,
+	    < 1163, 1763, 136 >,
+	    < 1006, 1565, 136 >,
+	    < 593, 1718, 11 >,
+	    < 669, 2226, 15 >,
+	    < 262, 2090, 4 >,
+	    < 30, 2322, 4 >,
+	    < 2, 1830, 8 >,
+	    < 205, 1638, 4 >,
+	    < -245, 1318, 8 >,
+	    < -356, 1523, 20 >,
+	    < -13, 1850, 11 >,
+	    < 110, 1634, 4 >
+	]
 	
 	array<vector> reaperspawns = []
 	reaperspawns.append( < -705, 1128, 160 > )

@@ -306,9 +306,9 @@ void function RegisterCustomFDContent()
 	routes[ "titanMain" ].append( < -35, -769, 1 > )
 	
 	routes[ "dronesPathing" ] <- []
-	routes[ "dronesPathing" ].append( < -175, -630, 1 > )
+	routes[ "dronesPathing" ].append( < -175, -630, 3 > )
 	routes[ "dronesPathing" ].append( < 494, -993, 8 > )
-	routes[ "dronesPathing" ].append( < 1043, -710, 1 > )
+	routes[ "dronesPathing" ].append( < 1043, -710, 3 > )
 	routes[ "dronesPathing" ].append( < 977, 1010, 8 > )
-	routes[ "dronesPathing" ].append( < -130, 1026, 2 > )
+	routes[ "dronesPathing" ].append( < -130, 1026, 3 > )
 }
