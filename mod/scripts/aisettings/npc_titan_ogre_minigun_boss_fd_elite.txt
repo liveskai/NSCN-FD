@@ -1,7 +1,7 @@
 #base "npc_titan_ogre_minigun_boss_fd.txt"
 npc_titan_ogre_minigun_boss_fd_elite
 {
-	title 							"Elite Legion"
+	title 							"精英軍團"
 	showTitle						1
 	npc_titan_player_settings		"titan_ogre_legion_prime"
 	BehaviorSelector				"behavior_titan_ogre_minigun_elite"
@@ -14,7 +14,7 @@ npc_titan_ogre_minigun_boss_fd_elite
 	
 	PainOnHeavyDamageThreshold		0
 	PainOnRepeatDamageThreshold		10000
-	RepeatDamageTimeInterval		30
+	RepeatDamageTimeInterval		0
 	breakOutOfPainDamageThreshold	5000
 	lightPainMinInterval			30
 	heavyPainMinInterval			60

@@ -1,7 +1,7 @@
 #base "npc_titan_atlas_vanguard_boss_fd.txt"
 npc_titan_atlas_vanguard_boss_fd_elite
 {
-	title 							"Elite Monarch"
+	title 							"精英帝王"
 	showTitle						1
 	BehaviorSelector				"behavior_titan_elite"
 	
@@ -13,7 +13,7 @@ npc_titan_atlas_vanguard_boss_fd_elite
 	
 	PainOnHeavyDamageThreshold		0
 	PainOnRepeatDamageThreshold		10000
-	RepeatDamageTimeInterval		30
+	RepeatDamageTimeInterval		0
 	breakOutOfPainDamageThreshold	5000
 	lightPainMinInterval			30
 	heavyPainMinInterval			60

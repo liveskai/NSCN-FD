@@ -8,7 +8,7 @@ npc_titan_stryder_leadwall_shift_core_elite
 
    	circleStrafeDist			400
 
- 	dodgePeriod					8
+ 	dodgePeriod					2
 	maxDodgePerPeriod			2
 
 	meleeInterval					1
