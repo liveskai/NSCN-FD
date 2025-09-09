@@ -105,7 +105,7 @@ npc_titan_ogre_minigun_boss_fd_elite
 	maxBlockPerPeriod			1
 	
 	dodgePeriod					3
-	maxDodgePerPeriod			1
+	maxDodgePerPeriod			2
 	circleStrafeDist			600
 	
 	aimAngularSpeed			10

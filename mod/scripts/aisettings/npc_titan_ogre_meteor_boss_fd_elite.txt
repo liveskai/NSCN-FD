@@ -96,7 +96,7 @@ npc_titan_ogre_meteor_boss_fd_elite
 	maxBlockPerPeriod			2
 	
 	dodgePeriod					3
-	maxDodgePerPeriod			1
+	maxDodgePerPeriod			2
 	circleStrafeDist			600
 
 	titanCamoIndex 31

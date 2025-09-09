@@ -92,7 +92,7 @@ npc_titan_atlas_tracker_fd_sniper_elite
 	maxBlockPerPeriod			2
 	
 	dodgePeriod					2
-	maxDodgePerPeriod			1
+	maxDodgePerPeriod			3
 	circleStrafeDist			900
 
 	titanCamoIndex 31

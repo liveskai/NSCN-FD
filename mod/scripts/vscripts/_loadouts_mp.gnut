@@ -312,25 +312,15 @@ void function TryGivePilotLoadoutForGracePeriod( entity player )
 		float respawnTime = expect float( player.s.respawnTime )
 		respawnTime += gracePeriodDuration
 		
-		if ( respawnTime >= Time() && player.s.noFiredWeapon || svGlobal.isInPilotGracePeriod || GetGameState() < eGameState.Playing || player.p.usingLoadoutCrate || file.allowChangeLoadoutFunc != null && file.allowChangeLoadoutFunc( player ) )
+		if ( respawnTime >= Time() && player.s.noFiredWeapon || svGlobal.isInPilotGracePeriod || GetGameState() < eGameState.Playing || player.p.usingLoadoutCrate || file.allowChangeLoadoutFunc != null && file.allowChangeLoadoutFunc( player ) && IsPilot( player ) )
 		{
-			if ( player.IsTitan() )
+			if ( !Loadouts_CanGivePilotLoadout( player ) && GetGameState() < eGameState.Playing )
+				thread GiveLoadoutWhenIntroOver( player )
+			else if ( Loadouts_CanGivePilotLoadout( player ) )
 			{
+				Loadouts_TryGivePilotLoadout( player )
 				player.s.loadoutDirty = false
-				if ( Loadouts_CanGiveTitanLoadout( player ) )
-					Loadouts_TryGiveTitanLoadout( player )
 			}
-			else
-			{
-				if ( !Loadouts_CanGivePilotLoadout( player ) && GetGameState() < eGameState.Playing )
-					thread GiveLoadoutWhenIntroOver( player )
-				else if ( Loadouts_CanGivePilotLoadout( player ) )
-				{
-					Loadouts_TryGivePilotLoadout( player )
-					player.s.loadoutDirty = false
-				}
-			}
-			
 			player.p.usingLoadoutCrate = false
 		}
 		else

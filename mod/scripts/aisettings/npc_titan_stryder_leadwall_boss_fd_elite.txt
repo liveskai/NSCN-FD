@@ -98,7 +98,7 @@ npc_titan_stryder_leadwall_boss_fd_elite
 	maxBlockPerPeriod			5
 	
 	dodgePeriod					2
-	maxDodgePerPeriod			1
+	maxDodgePerPeriod			4
 	circleStrafeDist			1200
 
 	titanCamoIndex 31

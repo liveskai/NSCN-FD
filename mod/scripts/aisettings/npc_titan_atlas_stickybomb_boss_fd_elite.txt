@@ -93,7 +93,7 @@ npc_titan_atlas_stickybomb_boss_fd_elite
 	maxBlockPerPeriod			2
 	
 	dodgePeriod					2
-	maxDodgePerPeriod			1
+	maxDodgePerPeriod			3
 	circleStrafeDist			900
 
 	titanCamoIndex 31

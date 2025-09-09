@@ -90,7 +90,7 @@ npc_titan_stryder_sniper_boss_fd_elite
 	maxBlockPerPeriod			2
 	
 	dodgePeriod					2
-	maxDodgePerPeriod			1
+	maxDodgePerPeriod			4
 	circleStrafeDist			1200
 	
 	aimAngularSpeed			45
