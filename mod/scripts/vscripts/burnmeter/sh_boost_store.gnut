@@ -1,3 +1,4 @@
+untyped
 global function ShInitBoostStore
 global function ShInitBoostStoreForMode
 global function GetAvailableBoosts
@@ -159,6 +160,7 @@ void function SetTeamReserveInteractCallback( void functionref( entity, string, 
 
 void function Store_OnClientConnected( entity player )
 {
+	player.s.numTurrets <- 0
 	file.playerBonusData[ player ] <- 0
 	string playerUID = player.GetUID()
 	if ( !file.joinInProgressGivenToPlayers.contains( playerUID ) )
@@ -282,6 +284,21 @@ bool function ClientCommand_PurchaseBoost( entity player, array<string> args )
 				}
 				EmitSoundOnEntityOnlyToPlayer( player, player, "UI_InGame_FD_ArmoryPurchase" )
 				MessageToTeam( player.GetTeam(), eEventNotifications.FD_BoughtItem, null, player, burnReward.id )
+				
+				if(data.itemRef=="burnmeter_ap_turret_weapon_infinite")
+				{
+					player.s.numTurrets++
+					if(player.s.numTurrets>3)
+					{
+						thread PlayerInventory_TakeAllInventoryItems(player)
+						
+						foreach( turret in GetEntArrayByClass_Expensive( "npc_turret_sentry" ))
+						if(turret.GetBossPlayer()==player)
+							turret.Destroy()
+							
+						player.s.numTurrets = 0
+					}
+				}
 				break
 			}
 		}
